@@ -3,7 +3,7 @@ Project : Flap_Mega8
 Version : 2.0
 Chip type           : ATmega8
 Clock frequency     : 8,000000 MHz
-Program size        : 711 words (1422 bytes), 17,4% of FLASH [0x6E3D] EEPROM [0x0028] 19.09.2023
+Program size        : 711 words (1422 bytes), 17,4% of FLASH [0x6E3D] EEPROM [0x000A] 23.04.2024
 *****************************************************/
 
 #include <mega8.h>
@@ -12,7 +12,7 @@ Program size        : 711 words (1422 bytes), 17,4% of FLASH [0x6E3D] EEPROM [0x
 #include <1wireslave8.h>
 // !! неправильна€ работа китайского процессора !!
 //#define PRESET1a 	    5     // все подобрано имперически 1,50 ms; 90 грд.(открыта дл€ двигател€ HD-1501MG)
-#define PRESET1a 	    40    // все подобрано имперически 1,22 ms; 90 грд.(открыта дл€ двигател€ MG996)
+#define PRESET1a 	    10    // все подобрано имперически 1,22 ms; 90 грд.(открыта дл€ двигател€ MG996)
 #define PRESET1b        130   // все подобрано имперически 0,50 ms; 0 грд. (закрыта)
 // !! неправильна€ работа китайского процессора !!
 #define ID          0xF7    // идентификатор блока

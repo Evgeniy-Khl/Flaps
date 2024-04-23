@@ -26,7 +26,7 @@ TCNT0=0x00;
 // Timer Period: 20 ms
 // Output Pulse(s):
 // !! неправильная работа китайского процессора !!
-// OC1A Period: 8,192 ms Width: 0,50449 ms -> OCR1AL=0x3F; Width: 1,6807 ms -> OCR1BL=0xD2;
+// OC1A Period: 8,192 ms         Width: 0,50449 ms -> OCR1AL=0x3F; Width: 1,6807 ms -> OCR1BL=0xD2;
 // !! неправильная работа китайского процессора !!
 // Timer1 Overflow Interrupt: On
 // Input Capture Interrupt: Off
@@ -37,8 +37,8 @@ TCNT0=0x00;
 TCCR1A=(1<<COM1A1) | (0<<COM1A0) | (0<<COM1B1) | (0<<COM1B0) | (1<<WGM11) | (0<<WGM10);
 // !! неправильная работа китайского процессора !!
 TCCR1B=(0<<ICNC1) | (0<<ICES1) | (1<<WGM13) | (1<<WGM12) | (0<<CS12) | (1<<CS11) | (1<<CS10);
-ICR1H=0x09;
-ICR1L=0xC3;
+ICR1H=0x09;   // 0x09
+ICR1L=0xC3;   // 0xC3
 pstStep = PRESET1b-flpClose;  // единиц на 1%
 setflap(flpNow);
 OCR1AL=pvOcr1al;
